@@ -1,4 +1,5 @@
 using UnityEngine;
+using PrimeTween;
 
 public class Coin : MonoBehaviour, ICollectable
 {
@@ -11,6 +12,8 @@ public class Coin : MonoBehaviour, ICollectable
     private void OnEnable()
     {
         GameManager.Instance.OnMoneyChange.AddListener(PrintCurrentMoney);
+
+        
     }
 
     private void OnDisable()
