@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 302f3d189974d5847b14947498bb81fe, type: 3}
+  m_Name: BrrbrrPatapim
+  m_EditorClassIdentifier: 
+  Name: Brr brr Patapim
+  Description: Brr Brr Patapim is one of the brainrot animals created by AI and published
+    on tiktok. He is actually secretly Elon Musk, the shadow president of America.
+  ElementalType: 2
+  Cost: 123
+  Health: 231
+  ATK: 321
+  CharacterImage: {fileID: 21300000, guid: 7b272c7553d46af409b49bba83c236db, type: 3}

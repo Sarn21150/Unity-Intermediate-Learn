@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 302f3d189974d5847b14947498bb81fe, type: 3}
+  m_Name: CapuccinoAssasino
+  m_EditorClassIdentifier: 
+  Name: Capuccino Assasino
+  Description: "Cappuccino Assassino\u2019s story begins in the peaceful village
+    of Yggdrasil, where he was once a young dreamer, hoping to become a noble samurai.
+    That dream was shattered when Crocodilo Bombardino, a flying alligator thirsty
+    for destruction, razed the village to the ground. Almost no one survived \u2014
+    except for the young boy, Cappuccino."
+  ElementalType: 0
+  Cost: 111
+  Health: 111
+  ATK: 111
+  CharacterImage: {fileID: 21300000, guid: 71f429419863e0048b69efc40ca6fdee, type: 3}

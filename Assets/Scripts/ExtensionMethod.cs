@@ -1,16 +1,31 @@
 using UnityEngine;
-
-public class ExtensionMethod : MonoBehaviour
+using PrimeTween;
+public static class ExtensionMethod
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public static void Fade(this CanvasGroup canvasGroup, bool isShow)
     {
-        
+        float targetAlpha = isShow ? 1f : 0f;
+        if(Mathf.Approximately(canvasGroup.alpha, targetAlpha))
+        {
+            canvasGroup.SetCanvasGroupInteraction(isShow);
+            return;
+        }
+
+        canvasGroup.SetCanvasGroupInteraction(isShow);
+        Tween.Alpha(canvasGroup, targetAlpha, 0.5f);
     }
 
-    // Update is called once per frame
-    void Update()
+    public static void Hide(this CanvasGroup canvasGroup, bool isShow)
     {
+        canvasGroup.alpha = 0;
+        canvasGroup.SetCanvasGroupInteraction(false);
+    }
+
+    public static void SetCanvasGroupInteraction(this CanvasGroup canvasGroup,bool isEnable)
+    {
+        canvasGroup.blocksRaycasts = isEnable;
+        canvasGroup.interactable = isEnable;
         
+
     }
 }
